@@ -1,8 +1,7 @@
+import Home from "@pages/Home";
+import RootApp from "@pages/RootApp";
 import { createBrowserRouter } from "react-router";
 import type { RouteObject } from "react-router";
-import Login from "@pages/Login";
-import Register from "@pages/Register";
-import Home from "@pages/Home";
 
 const routes: RouteObject[] = [
   {
@@ -10,12 +9,8 @@ const routes: RouteObject[] = [
     element: <Home />,
   },
   {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/register",
-    element: <Register />,
+    path: "/root",
+    element: <RootApp />,
   },
 ];
 

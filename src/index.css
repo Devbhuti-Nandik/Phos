@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-appBg: #0b0c10;
+  --color-panelBg: #111217;
+  --color-softBg: #1f1e24;
+  --color-borderSoft: rgba(255, 255, 255, 0.08);
+  --color-accent: #7c6cff;
+}
+
 /* globals.css */
 .glass {
   backdrop-filter: blur(10px);

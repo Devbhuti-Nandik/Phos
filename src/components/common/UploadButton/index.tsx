@@ -1,15 +1,18 @@
 import UploadIcon from "@assets/icons/UploadAdd.svg";
 
-const UploadButton = () => {
+type UploadButtonProps = {
+  handleOpenFilePicker: () => void;
+};
+
+const UploadButton = ({ handleOpenFilePicker }: UploadButtonProps) => {
   return (
     <button
+      onClick={handleOpenFilePicker}
       className="relative
         h-24
         w-24
         rounded-2xl
-        border
-        border-dashed
-        border-violet/60
+        border-2 border-dashed border-violet/40
         flex
         justify-center
         items-center

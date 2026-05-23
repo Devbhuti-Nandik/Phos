@@ -1,3 +1,5 @@
+import EditorCanvas from "@components/EditorCanvas";
+
 const RootApp = () => {
   return (
     <div
@@ -32,7 +34,7 @@ const RootApp = () => {
               items-center 
               justify-center 
               text-white ring-1 
-              ring-white/[0.04]   
+              ring-white/4   
               relative
               z-10
               bg-black/40
@@ -41,7 +43,7 @@ const RootApp = () => {
               rounded-2xl
               shadow-[0_20px_80px_rgba(0,0,0,0.5)]"
             >
-              Canvas
+              <EditorCanvas />
             </div>
             {/* Bottom Filmstrip */}
             <div className="h-1/5 text-white glass flex items-center px-4 gap-3 rounded-2xl border-t border-white/5">

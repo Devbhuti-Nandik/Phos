@@ -1,6 +1,7 @@
 import UploadButton from "@components/common/UploadButton";
 import { useImageUpload } from "@hooks/useImageUpload";
 import { useRef } from "react";
+import CanvasScreen from "./CanvasScreen";
 
 const EditorCanvas = () => {
   const inputRef = useRef<HTMLInputElement | null>(null);
@@ -40,11 +41,7 @@ const EditorCanvas = () => {
           items-center
           justify-center"
         >
-          <img
-            src={uploadedImage.preview}
-            alt="uploaded_image"
-            className="max-w-full max-h-full object-contain"
-          />
+          <CanvasScreen uploadedImage={uploadedImage} />
         </div>
       )}
     </div>
